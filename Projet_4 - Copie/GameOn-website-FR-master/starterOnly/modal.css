@@ -554,23 +554,39 @@ footer {
   }
 }
 
+@media screen and (max-width : 820px) {
+  
+  .topnav a { 
+  padding: 13px 16px;
+  margin: 20px 0 0 0px;
+  }
+
+  .hero-headline {
+    font-size: 3rem;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
 
   .topnav a {display: none;}
+  
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: -50px;
+    margin: -13px 34px;
   }
 
   .topnav.responsive {
     position: relative;
   }
+
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
-    top: 50px;
+    margin: -64px 34px;
   }
+  
   .topnav.responsive a {
     float: none;
     display: block;
@@ -580,7 +596,7 @@ footer {
   .main-navbar {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin: 15px auto;
   }
 
   .content {
@@ -606,6 +622,10 @@ footer {
     display: block;
   }
 
+  .topnav.responsive .icon {
+    margin: -62px 10px;
+  }
+
   .main-navbar a span {
     font-size: 16px;
   }
@@ -622,4 +642,111 @@ footer {
   #valid-form-content {
     height : 735px;
   }
+}
+
+@media screen and (max-width: 425px) {
+  .main-navbar a span {
+    font-size: 11px;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    margin: -62px 10px;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+    margin: -11px 10px;
+  }
+
+  .hero-headline {
+    font-size: 40px;
+  }
+
+  .hero-text {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+@media screen and ( max-width : 375px) {
+  
+  .main-navbar a span {
+    font-size: 9px;
+  }
+
+  .topnav a {
+    padding: 10px 15px;
+    margin: 20px 0 0 0px;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    margin: -60px 0px;
+  }
+
+  .topnav a.icon {
+    margin: -9px 0px;
+  }
+
+  .hero-content {
+    padding: 0px;
+  }
+
+  .hero-headline {
+    font-size: 38px;
+  }
+
+  .hero-text {
+    width: 76%;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width : 320px) {
+
+  img {
+    padding-right: 2rem;
+    height: auto;
+    width: 272px;
+    padding-top: 10px;
+    margin: 0px 2px;
+  }
+
+  .main-navbar {
+    margin-top: 0px;
+  }
+
+  .topnav a {
+    padding: 8px 10px;
+    margin: 20px 0 0 0px;
+  }
+
+  .topnav.responsive .icon {
+    margin: -40px 6px;
+    position: absolute;
+  }
+
+  .topnav a.icon {
+    position: absolute;
+    margin: 19px -43px;
+  }
+
+  .hero-headline {
+    font-size: 31px;
+  }
+  .hero-text {
+    width: 70%;
+  font-size: 17px;
+  top: -12px;
+  }
+
+  .copyrights {
+    margin-top: 30px;
+    text-align: center;
+  }
+
 }

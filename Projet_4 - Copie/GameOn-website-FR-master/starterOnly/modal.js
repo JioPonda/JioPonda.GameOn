@@ -19,12 +19,6 @@ const labelEmail = document.getElementById("email");
 const labelDate = document.getElementById("birthdate");
 const labelQuantity = document.getElementById("quantity");
 const radioLocation = document.querySelectorAll(".checkbox-input[type=radio]");
-const location1 = document.getElementById("location1")
-const location2 = document.getElementById("location2")
-const location3 = document.getElementById("location3")
-const location4 = document.getElementById("location4")
-const location5 = document.getElementById("location5")
-const location6 = document.getElementById("location6")
 const locationError = document.getElementById("errorCity");
 const checkedError = document.getElementById("errorChecked");
 const checkedBox = document.getElementById("checkbox1");
@@ -60,8 +54,7 @@ function closeValidForm() {
 let errorFirst = labelFirst.setCustomValidity("Veuillez entrer 2 caractères ou plus pour le champ du prénom.");
 
 function validationFirst () {
-  let regex = /^([A-Za-zÀ-ÖØ-öø-ÿ-])+$/
-  if (labelFirst.value !== "" && labelFirst.value.length >= 2 && regex.test(labelFirst.value)) {
+  if (labelFirst.value !== "" && labelFirst.value.length >= 2) {
     console.log(true);
     return true;
   } else {
@@ -83,8 +76,7 @@ labelFirst.addEventListener("input" , function(){
 let errorLast = labelLast.setCustomValidity("Veuillez entrer 2 caractères ou plus pour le champ du nom.");
 
 function validationLast () {
-  let regex = /^([A-Za-zÀ-ÖØ-öø-ÿ-])+$/
-  if (labelLast.value !== "" && labelLast.value.length >= 2 && regex.test(labelLast.value)) {
+  if (labelLast.value !== "" && labelLast.value.length >= 2) {
     console.log(true);
     return true;
   } else {
